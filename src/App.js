@@ -2,6 +2,7 @@ import "./App.css";
 import React from "react";
 import { Route, Link, Routes, useNavigate } from "react-router-dom";
 import ShopPage from "./pages/shop/shop.component";
+import Header from "./componets/header/header.component";
 
 import HomePage from "./pages/homepage/homepage.component";
 const HatPage = () => {
@@ -17,6 +18,7 @@ const HatPage = () => {
 function App() {
   return (
     <div>
+      <Header />
       <Routes>
         <Route exact path="/" element={<HomePage />} />
         <Route path="/shop" element={<ShopPage />} />
